@@ -35,7 +35,7 @@ Some records in the DS domain have missing VISIT and VISITNUM values due to the 
 
 ---
 
-## Question 2: ADaM ADSL Dataset Derivation
+## Question 2: ADaM ADSL Dataset Creation
 
 **Objective:** Create ADaM ADSL using the `admiral` package with specific derived variables.
 
@@ -56,7 +56,7 @@ Some records in the DS domain have missing VISIT and VISITNUM values due to the 
 
 ---
 
-## Question 3: Adverse Events Summary & Visualizations
+## Question 3: Adverse Events Reporting
 
 **Objective:** Create summary tables and visualizations for adverse events analysis using `gtsummary` and `ggplot2`.
 
@@ -82,7 +82,7 @@ Some records in the DS domain have missing VISIT and VISITNUM values due to the 
 
 ---
 
-## Question 4: AI Clinical Trial Data Agent
+## Question 4: GenAI Clinical Data Assistant
 
 **Objective:** Develop a generative AI assistant that translates natural language questions into structured pandas queries for adverse events data.
 
