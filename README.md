@@ -19,7 +19,7 @@ ads_coding_assess/
 
 ## Question 1: SDTM DS Domain Creation
 
-**Objective:** Create an SDTM DS (Disposition) domain from raw clinical data using the `sdtm.oak` package.
+**Objective:** Create an SDTM DS domain from raw clinical data using the `sdtm.oak` package.
 
 ### Files Included
 
