@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------
+-                                logrx Metadata                                -
+--------------------------------------------------------------------------------
+This log was generated using logrx 0.4.0
+logrx package version: 0.4.0
+logrx build: CRAN (R 4.4.1)
+logrx link to repository: https://github.com/pharmaverse/logrx
+--------------------------------------------------------------------------------
+-                          User and File Information                           -
+--------------------------------------------------------------------------------
+User: jingli
+File Name: question_2.R
+File Path: /Users/jingli/Desktop/ads_coding_assess/question_2
+File HashSum: ab90d3f5ace648527ed486d651a5de0656be5cec
+--------------------------------------------------------------------------------
+-                             Session Information                              -
+--------------------------------------------------------------------------------
+─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.1 (2024-06-14)
+ os       macOS Sonoma 14.4
+ system   aarch64, darwin20
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/New_York
+ date     2026-01-30
+ pandoc   NA
+ quarto   NA
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package         * version date (UTC) lib source
+ admiral         * 1.4.0   2026-01-15 [1] CRAN (R 4.4.3)
+ admiraldev        1.4.0   2026-01-14 [1] CRAN (R 4.4.3)
+ cli               3.6.5   2025-04-23 [1] CRAN (R 4.4.1)
+ digest            0.6.39  2025-11-19 [1] CRAN (R 4.4.3)
+ dplyr           * 1.1.4   2023-11-17 [1] CRAN (R 4.4.0)
+ evaluate          1.0.5   2025-08-27 [1] CRAN (R 4.4.1)
+ generics          0.1.4   2025-05-09 [1] CRAN (R 4.4.1)
+ glue              1.8.0   2024-09-30 [1] CRAN (R 4.4.1)
+ hms               1.1.4   2025-10-17 [1] CRAN (R 4.4.1)
+ knitr             1.50    2025-03-16 [1] CRAN (R 4.4.1)
+ lifecycle         1.0.4   2023-11-07 [1] CRAN (R 4.4.0)
+ logrx           * 0.4.0   2025-05-05 [1] CRAN (R 4.4.1)
+ lubridate       * 1.9.4   2024-12-08 [1] CRAN (R 4.4.1)
+ magrittr          2.0.4   2025-09-12 [1] CRAN (R 4.4.1)
+ pharmaversesdtm * 1.4.0   2026-01-10 [1] CRAN (R 4.4.3)
+ pillar            1.11.1  2025-09-17 [1] CRAN (R 4.4.1)
+ pkgconfig         2.0.3   2019-09-22 [1] CRAN (R 4.4.0)
+ purrr             1.2.0   2025-11-04 [1] CRAN (R 4.4.1)
+ R6                2.6.1   2025-02-15 [1] CRAN (R 4.4.1)
+ rlang             1.1.6   2025-04-11 [1] CRAN (R 4.4.1)
+ roxygen2          7.3.3   2025-09-03 [1] CRAN (R 4.4.1)
+ sessioninfo       1.2.3   2025-02-05 [1] CRAN (R 4.4.1)
+ stringi           1.8.7   2025-03-27 [1] CRAN (R 4.4.1)
+ stringr         * 1.6.0   2025-11-04 [1] CRAN (R 4.4.1)
+ tibble            3.3.0   2025-06-08 [1] CRAN (R 4.4.1)
+ tidyr             1.3.1   2024-01-24 [1] CRAN (R 4.4.0)
+ tidyselect        1.2.1   2024-03-11 [1] CRAN (R 4.4.0)
+ timechange        0.3.0   2024-01-18 [1] CRAN (R 4.4.0)
+ vctrs             0.6.5   2023-12-01 [1] CRAN (R 4.4.0)
+ withr             3.0.2   2024-10-28 [1] CRAN (R 4.4.1)
+ xfun              0.54    2025-10-30 [1] CRAN (R 4.4.1)
+ xml2              1.5.1   2025-12-01 [1] CRAN (R 4.4.3)
+
+ [1] /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library
+ * ── Packages attached to the search path.
+
+─ External software ──────────────────────────────────────────────────────────
+ setting        value
+ cairo
+ cairoFT
+ pango
+ png
+ jpeg
+ tiff
+ tcl
+ curl           8.4.0
+ zlib           1.2.12
+ bzlib          1.0.8, 13-Jul-2019
+ xz             5.4.4
+ deflate
+ PCRE           10.42 2022-12-11
+ ICU            74.1
+ TRE            TRE 0.8.0 R_fixes (BSD)
+ iconv          Apple or GNU libiconv 1.11
+ readline       5.2
+
+	  BLAS           /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib
+
+	  lapack         /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRlapack.dylib
+ lapack_version 3.12.0
+
+─ Python configuration ───────────────────────────────────────────────────────
+ Python is not available
+
+──────────────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------------------
+-                               Masked Functions                               -
+--------------------------------------------------------------------------------
+function `plot` from {package:base} by package:graphics
+function `body<-` from {package:base} by package:methods
+function `kronecker` from {package:base} by package:methods
+--------------------------------------------------------------------------------
+-                          Used Package and Functions                          -
+--------------------------------------------------------------------------------
+{!!! NOT FOUND !!!} format_agegr9, format_agegr9n
+{package:admiral} convert_blanks_to_na, derive_vars_dtm, derive_vars_merged, exprs, derive_vars_dtm_to_dt, derive_vars_extreme_event, event, convert_dtc_to_dt
+{package:base} library, is.na, list, nchar
+{package:dplyr} case_when, between, mutate, if_else, select
+{package:stringr} %>%, str_detect
+--------------------------------------------------------------------------------
+-                         Program Run Time Information                         -
+--------------------------------------------------------------------------------
+Start time: 2026-01-30 18:36:36 EST
+End time: 2026-01-30 18:36:38 EST
+Run time: 2 seconds
+--------------------------------------------------------------------------------
+-                             Errors and Warnings                              -
+--------------------------------------------------------------------------------
+Errors:
+	
+
+Warnings:
+	package ‘admiral’ was built under R version 4.4.3
+	package ‘pharmaversesdtm’ was built under R version 4.4.3
+--------------------------------------------------------------------------------
+-                         Messages, Output, and Result                         -
+--------------------------------------------------------------------------------
+Messages:
+	Attaching package: ‘dplyr’
+	The following objects are masked from ‘package:stats’:    filter, lag
+	The following objects are masked from ‘package:base’:    intersect, setdiff, setequal, union
+	Attaching package: ‘lubridate’
+	The following objects are masked from ‘package:base’:    date, intersect, setdiff, union
+Output:
+	
+
+Result:
+	# A tibble: 306 × 7
+	   USUBJID     AGEGR9 AGEGR9N TRTSDTM             TRTSTMF ITTFL LSTAVLDT  
+	   <chr>       <chr>    <int> <dttm>              <chr>   <chr> <date>    
+	 1 01-701-1015 >50          3 2014-01-02 00:00:00 H       Y     2014-07-02
+	 2 01-701-1023 >50          3 2012-08-05 00:00:00 H       Y     2013-02-18
+	 3 01-701-1028 >50          3 2013-07-19 00:00:00 H       Y     2014-01-14
+	 4 01-701-1033 >50          3 2014-03-18 00:00:00 H       Y     2014-09-15
+	 5 01-701-1034 >50          3 2014-07-01 00:00:00 H       Y     2014-12-30
+	 6 01-701-1047 >50          3 2013-02-12 00:00:00 H       Y     2013-07-28
+	 7 01-701-1057 >50          3 NA                  <NA>    Y     2013-12-20
+	 8 01-701-1097 >50          3 2014-01-01 00:00:00 H       Y     2014-07-09
+	 9 01-701-1111 >50          3 2012-09-07 00:00:00 H       Y     2013-02-22
+	10 01-701-1115 >50          3 2012-11-30 00:00:00 H       Y     2013-05-20
+	# ℹ 296 more rows
+--------------------------------------------------------------------------------
+-                               Log Output File                                -
+--------------------------------------------------------------------------------
+Log name: question_2.log
+Log path: /Users/jingli/Desktop/ads_coding_assess/question_2

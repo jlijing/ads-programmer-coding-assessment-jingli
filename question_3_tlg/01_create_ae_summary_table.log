@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------------
+-                                logrx Metadata                                -
+--------------------------------------------------------------------------------
+This log was generated using logrx 0.4.0
+logrx package version: 0.4.0
+logrx build: CRAN (R 4.4.1)
+logrx link to repository: https://github.com/pharmaverse/logrx
+--------------------------------------------------------------------------------
+-                          User and File Information                           -
+--------------------------------------------------------------------------------
+User: jingli
+File Name: summary_table.R
+File Path: /Users/jingli/Desktop/ads_coding_assess/question_3_tlg
+File HashSum: 74ea128c7f22ec064d1b1cb99dcab2097cfc1d3e
+--------------------------------------------------------------------------------
+-                             Session Information                              -
+--------------------------------------------------------------------------------
+─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.1 (2024-06-14)
+ os       macOS Sonoma 14.4
+ system   aarch64, darwin20
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       America/New_York
+ date     2026-01-31
+ pandoc   NA
+ quarto   NA
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package         * version date (UTC) lib source
+ cards             0.7.1   2025-12-02 [1] CRAN (R 4.4.3)
+ chromote          0.5.1   2025-04-24 [1] CRAN (R 4.4.1)
+ cli               3.6.5   2025-04-23 [1] CRAN (R 4.4.1)
+ commonmark        2.0.0   2025-07-07 [1] CRAN (R 4.4.1)
+ digest            0.6.39  2025-11-19 [1] CRAN (R 4.4.3)
+ dplyr           * 1.1.4   2023-11-17 [1] CRAN (R 4.4.0)
+ evaluate          1.0.5   2025-08-27 [1] CRAN (R 4.4.1)
+ fastmap           1.2.0   2024-05-15 [1] CRAN (R 4.4.0)
+ fs                1.6.6   2025-04-12 [1] CRAN (R 4.4.1)
+ generics          0.1.4   2025-05-09 [1] CRAN (R 4.4.1)
+ glue              1.8.0   2024-09-30 [1] CRAN (R 4.4.1)
+ gt                1.3.0   2026-01-22 [1] CRAN (R 4.4.3)
+ gtsummary       * 2.5.0   2025-12-05 [1] CRAN (R 4.4.3)
+ htmltools         0.5.9   2025-12-04 [1] CRAN (R 4.4.3)
+ jsonlite          2.0.0   2025-03-27 [1] CRAN (R 4.4.1)
+ knitr             1.50    2025-03-16 [1] CRAN (R 4.4.1)
+ later             1.4.4   2025-08-27 [1] CRAN (R 4.4.1)
+ lifecycle         1.0.4   2023-11-07 [1] CRAN (R 4.4.0)
+ litedown          0.8     2025-11-02 [1] CRAN (R 4.4.1)
+ logrx             0.4.0   2025-05-05 [1] CRAN (R 4.4.1)
+ magrittr          2.0.4   2025-09-12 [1] CRAN (R 4.4.1)
+ markdown          2.0     2025-03-23 [1] CRAN (R 4.4.1)
+ otel              0.2.0   2025-08-29 [1] CRAN (R 4.4.1)
+ pharmaverseadam * 1.2.0   2025-09-06 [1] CRAN (R 4.4.1)
+ pillar            1.11.1  2025-09-17 [1] CRAN (R 4.4.1)
+ pkgconfig         2.0.3   2019-09-22 [1] CRAN (R 4.4.0)
+ processx          3.8.6   2025-02-21 [1] CRAN (R 4.4.1)
+ promises          1.5.0   2025-11-01 [1] CRAN (R 4.4.1)
+ ps                1.9.1   2025-04-12 [1] CRAN (R 4.4.1)
+ purrr             1.2.0   2025-11-04 [1] CRAN (R 4.4.1)
+ R6                2.6.1   2025-02-15 [1] CRAN (R 4.4.1)
+ Rcpp              1.1.0   2025-07-02 [1] CRAN (R 4.4.1)
+ rlang             1.1.6   2025-04-11 [1] CRAN (R 4.4.1)
+ sass              0.4.10  2025-04-11 [1] CRAN (R 4.4.1)
+ sessioninfo       1.2.3   2025-02-05 [1] CRAN (R 4.4.1)
+ stringi           1.8.7   2025-03-27 [1] CRAN (R 4.4.1)
+ stringr           1.6.0   2025-11-04 [1] CRAN (R 4.4.1)
+ tibble            3.3.0   2025-06-08 [1] CRAN (R 4.4.1)
+ tidyr             1.3.1   2024-01-24 [1] CRAN (R 4.4.0)
+ tidyselect        1.2.1   2024-03-11 [1] CRAN (R 4.4.0)
+ vctrs             0.6.5   2023-12-01 [1] CRAN (R 4.4.0)
+ webshot2          0.1.2   2025-04-23 [1] CRAN (R 4.4.1)
+ websocket         1.4.4   2025-04-10 [1] CRAN (R 4.4.1)
+ withr             3.0.2   2024-10-28 [1] CRAN (R 4.4.1)
+ xfun              0.54    2025-10-30 [1] CRAN (R 4.4.1)
+ xml2              1.5.1   2025-12-01 [1] CRAN (R 4.4.3)
+
+ [1] /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/library
+ * ── Packages attached to the search path.
+
+─ External software ──────────────────────────────────────────────────────────
+ setting        value
+ cairo
+ cairoFT
+ pango
+ png
+ jpeg
+ tiff
+ tcl
+ curl           8.4.0
+ zlib           1.2.12
+ bzlib          1.0.8, 13-Jul-2019
+ xz             5.4.4
+ deflate
+ PCRE           10.42 2022-12-11
+ ICU            74.1
+ TRE            TRE 0.8.0 R_fixes (BSD)
+ iconv          Apple or GNU libiconv 1.11
+ readline       5.2
+
+	  BLAS           /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib
+
+	  lapack         /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRlapack.dylib
+ lapack_version 3.12.0
+
+─ Python configuration ───────────────────────────────────────────────────────
+ Python is not available
+
+──────────────────────────────────────────────────────────────────────────────
+--------------------------------------------------------------------------------
+-                               Masked Functions                               -
+--------------------------------------------------------------------------------
+function `plot` from {package:base} by package:graphics
+function `body<-` from {package:base} by package:methods
+function `kronecker` from {package:base} by package:methods
+--------------------------------------------------------------------------------
+-                          Used Package and Functions                          -
+--------------------------------------------------------------------------------
+{package:base} library, c, is.na
+{package:dplyr} %>%, filter, distinct, mutate, select, left_join
+{package:gt} gtsave
+{package:gtsummary} tbl_summary, all_categorical, modify_header, modify_caption, as_gt
+{package:tidyr} pivot_wider
+--------------------------------------------------------------------------------
+-                         Program Run Time Information                         -
+--------------------------------------------------------------------------------
+Start time: 2026-01-31 00:05:42 EST
+End time: 2026-01-31 00:05:47 EST
+Run time: 5 seconds
+--------------------------------------------------------------------------------
+-                             Errors and Warnings                              -
+--------------------------------------------------------------------------------
+Errors:
+	
+
+Warnings:
+	package ‘gtsummary’ was built under R version 4.4.3
+--------------------------------------------------------------------------------
+-                         Messages, Output, and Result                         -
+--------------------------------------------------------------------------------
+Messages:
+	Attaching package: ‘dplyr’
+	The following objects are masked from ‘package:stats’:    filter, lag
+	The following objects are masked from ‘package:base’:    intersect, setdiff, setequal, union
+	file:////var/folders/8t/yc7dtnzx0wz4xd396m50m_xw0000gn/T//Rtmp476TeR/file17ae7379c2a94.html screenshot completed
+Output:
+	
+
+Result:
+	[1] "ae_summary_table.pdf"
+--------------------------------------------------------------------------------
+-                               Log Output File                                -
+--------------------------------------------------------------------------------
+Log name: summary_table.log
+Log path: /Users/jingli/Desktop/ads_coding_assess/question_3_tlg
