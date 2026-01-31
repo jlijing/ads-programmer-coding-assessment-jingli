@@ -37,7 +37,7 @@ Some records in the DS domain have missing VISIT and VISITNUM values due to the 
 
 ## Question 2: ADaM ADSL Dataset Derivation
 
-**Objective:** Create an ADaM ADSL (Subject-Level Analysis Dataset) using the `admiral` package with specific derived variables.
+**Objective:** Create ADaM ADSL using the `admiral` package with specific derived variables.
 
 ### Files Included
 
