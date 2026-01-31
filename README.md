@@ -51,8 +51,8 @@ Some records in the DS domain have missing VISIT and VISITNUM values due to the 
 
 - **AGEGR9 / AGEGR9N**: Age group categories (<18, 18-50, >50)
 - **TRTSDTM / TRTSTMF**: Treatment start datetime with time imputation flag
-- **ITTFL**: Intent-to-treat population flag
-- **LSTAVLDT**: Last available date (maximum of VS, AE, DS dates and TRTEDT)
+- **ITTFL**: Intent to treat flag
+- **LSTAVLDT**: Last available date (max of VS, AE, DS dates and TRTEDT)
 
 ---
 
