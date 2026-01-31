@@ -10,8 +10,9 @@ Jing Li's Github Submission for ADS Programmer Coding Assessment
 ads_coding_assess/
 ├── question_1_sdtm/     
 ├── question_2_adam/      
-├── question_3_tlg/        
-├── question_4_agent/      
+├── question_3_tlg/
+    ├── output_files/       
+├── question_4_agent/
 └── README.md
 ```
 
