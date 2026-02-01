@@ -22,7 +22,7 @@ study_ct <- read.csv("sdtm_ct.csv")
 # patient_number: sub id from PATNUM
 #
 # noticed a formatting inconsistency in CT
-# raw data has "Ambul Ecg Removal" but CT expects "Ambul ECG Removal"
+# raw data has "Ambul Ecg Removal" but CT has "Ambul ECG Removal"
 raw_data <- raw_data %>%
   generate_oak_id_vars(
     pat_var = "PATNUM",
@@ -38,7 +38,7 @@ raw_data <- raw_data %>%
 # assign_no_ct: maps raw variable to SDTM variable WITHOUT controlled terminology
 # maps IT.DSTERM (standard disposition terms) to DSTERM
 # maps OTHERSP to DSTERM
-#   this overwrites DSTERM when OTHERSP has a value (for non standard terms)
+# this overwrites DSTERM when OTHERSP has a value (for non standard terms)
 ds_data <- assign_no_ct(
   raw_dat = raw_data,
   raw_var = "IT.DSTERM",
@@ -56,8 +56,8 @@ ds_data <- assign_no_ct(
 ds_data <- ds_data %>%
   # DSDECOD: standardized disposition code
   # assign_ct: map raw variable using controlled terminology 
-  #   - ct_spec: The CT specification file (study_ct)
-  #   - ct_clst: The codelist to use (C66727 = disposition event codelist)
+  # ct_spec: The CT specification file (study_ct)
+  # ct_clst: The codelist to use (C66727 = disposition event codelist)
   assign_ct(
     raw_dat = raw_data,
     raw_var = "IT.DSDECOD",
@@ -119,7 +119,7 @@ ds <- ds_data %>%
     STUDYID = raw_data$STUDY,
     DOMAIN = "DS",
     
-    # USUBJID: unique subject ID (format: "01-" + patient number)
+    # USUBJID: unique subject ID 
     USUBJID = paste0("01-", raw_data$PATNUM),
     
     # ensure DSTERM and DSDECOD are uppercase
@@ -127,9 +127,9 @@ ds <- ds_data %>%
     DSDECOD = toupper(DSDECOD),
     
     # DSCAT: category of disposition event
-    #   - "PROTOCOL MILESTONE" for randomization
-    #   - "OTHER EVENT" for final visits (lab, retrieval)
-    #   - "DISPOSITION EVENT" for all other disposition records
+    # PROTOCOL MILESTONE for randomization
+    # OTHER EVENT for final visits (lab, retrieval)
+    # DISPOSITION EVENT for all other disposition records
     DSCAT = case_when(
       toupper(DSTERM) == "RANDOMIZED" ~ "PROTOCOL MILESTONE",
       toupper(DSTERM) %in% c("FINAL LAB VISIT", "FINAL RETRIEVAL VISIT") ~
@@ -139,7 +139,7 @@ ds <- ds_data %>%
   # sort by subject and date before generating sequence number
   arrange(USUBJID, DSSTDTC) %>%
   
-  # DSSEQ: Sequence number - unique within subject, ordered by date
+  # DSSEQ: sequence number, this is unique within subject, ordered by date
   # derive_seq: generates sequential numbers within each USUBJID
   derive_seq(
     tgt_var = "DSSEQ",
@@ -158,7 +158,7 @@ ds <- ds_data %>%
     merge_key = "USUBJID"
   ) %>%
   
-  # select final SDTM DS domain variables 
+  # select final variables 
   select(STUDYID, DOMAIN, USUBJID, DSSEQ, DSTERM, DSDECOD, DSCAT, VISITNUM,
          VISIT, DSDTC, DSSTDTC, DSSTDY)
 
