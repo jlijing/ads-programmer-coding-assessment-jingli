@@ -142,8 +142,8 @@ python test_agent.py
 
 ## Notes
 
-- All R scripts were executed using `logrx::axecute()` to generate comprehensive execution logs
+- All R scripts were executed using `logrx::axecute()`
 - All log files show successful execution with no errors
-- **CSV and PDF output formats** were used for user convenience, allowing files to be viewed directly on GitHub without needing to download them
+- **CSV and PDF output formats** were used for user convenience, this allows the files to be viewed directly on GitHub without needing to download them
 - The Python virtual environment (`test_env/`) and API key files are excluded
 
