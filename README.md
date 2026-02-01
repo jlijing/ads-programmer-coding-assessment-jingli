@@ -51,7 +51,7 @@ ads_coding_assess/
 
 ### Note on Controlled Terminology
 
-Some records in the DS domain have missing/invalid VISIT and VISITNUM values due to the controlled terminology file (`sdtm_ct.csv`) provided on GitHub being incomplete. The CT file did not contain mappings for certain visit terms (e.g., "Unscheduled" visits), resulting in unmapped values for those records.
+Some records in the DS domain have invalid VISIT and VISITNUM values due to the controlled terminology file (`sdtm_ct.csv`) provided on GitHub being incomplete. The CT file did not contain mappings for certain visit terms (e.g., "Unscheduled" visits), so some defaulted to its orginal entry.
 
 ---
 
@@ -94,9 +94,9 @@ Some records in the DS domain have missing/invalid VISIT and VISITNUM values due
 
 ### Outputs
 
-1. **AESOC Summary Table**: Treatment emergent AEs summarized by System Organ Class using `gtsummary::tbl_summary()`, stratified by treatment arm (Placebo, Xanomeline High Dose, Xanomeline Low Dose) with n (%) statistics
+1. **AESOC Summary Table**: Treatment emergent AEs summarized by System Organ Class using `gtsummary::tbl_summary()`, stratified by treatment arm (placebo, xanomeline High Dose, xanomeline Low Dose) 
 
-2. **AE Severity Distribution Plot**: MILD/MODERATE/SEVERE distribution across treatment arms
+2. **AE Severity Distribution Plot**: Mild/Moderate/Severe distribution across treatment arms
 
 3. **Top 10 Most Frequent AEs Plot**: Top 10 most frequent adverse events with incidence rates and 95% Clopper-Pearson exact confidence intervals
 
@@ -132,7 +132,6 @@ Some records in the DS domain have missing/invalid VISIT and VISITNUM values due
 ### Running the Test Script in a Virutal Environment
 
 ```bash
-cd question_4_agent
 python -m venv test_env
 source test_env/bin/activate
 pip install pandas openai
